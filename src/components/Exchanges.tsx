@@ -3,7 +3,7 @@ import React from 'react';
 const Exchanges = () => {
 	return (
 		<div>
-			<p></p>
+			<p>Exchanges</p>
 			<p></p>
 		</div>
 	);
