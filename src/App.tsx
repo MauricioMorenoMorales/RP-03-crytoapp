@@ -21,8 +21,8 @@ const App: React.FC = () => {
 				<Layout>
 					<div className="routes">
 						<Switch>
-							//! si hay un bug en la navegación entonces revisa aquí ershiwu
-							sanshijiu
+							{/* //! si hay un bug en la navegación entonces revisa aquí ershiwu
+							sanshijiu */}
 							<Route exact path="/" component={Homepage} />
 							<Route exact path="/exchanges" component={Exchanges} />
 							<Route
