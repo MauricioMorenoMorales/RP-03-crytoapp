@@ -30,6 +30,9 @@ a:hover {
 .main {
 	flex: 0.8;
 	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 .routes {
 	padding: 20px;
@@ -374,4 +377,6 @@ a:hover {
 	flex-direction: column;
 	padding: 20px;
 	align-items: center;
+	align-self: flex-end;
+	width: 100%;
 }
