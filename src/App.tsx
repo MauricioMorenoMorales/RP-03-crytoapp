@@ -27,7 +27,7 @@ const App: React.FC = () => {
 							<Route exact path="/exchanges" component={Exchanges} />
 							<Route
 								exact
-								path="/criptocurrencies"
+								path="/cryptocurrencies"
 								component={Cryptocurrencies}
 							/>
 							<Route exact path="/crypto/:coinId" component={CryptoDetails} />
@@ -55,5 +55,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-console.log('probando esta wqea');
