@@ -1,6 +1,6 @@
 import React from 'react';
 
-const News = () => {
+const News: React.FC<{ simplified?: boolean }> = () => {
 	return (
 		<div>
 			<h1>News</h1>
