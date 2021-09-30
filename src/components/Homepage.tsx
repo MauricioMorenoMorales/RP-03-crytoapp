@@ -3,7 +3,7 @@ import millify from 'millify';
 import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
 
-import { useGetCryptosQuery } from '../services/cryptoApi';
+import { useGetCryptosQuery } from '../services/cryptoApi.service';
 import { Cryptocurrencies, News } from '.';
 
 const { Title } = Typography;
