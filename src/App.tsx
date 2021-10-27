@@ -1,4 +1,5 @@
 import { Switch, Route, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { Layout, Typography, Space } from 'antd';
 import './App.css';
 
@@ -21,8 +22,6 @@ const App: React.FC = () => {
 				<Layout>
 					<div className="routes">
 						<Switch>
-							{/* // si hay un bug en la navegación entonces revisa aquí ershiwu
-							sanshijiu */}
 							<Route exact path="/" component={Homepage} />
 							<Route exact path="/exchanges" component={Exchanges} />
 							<Route

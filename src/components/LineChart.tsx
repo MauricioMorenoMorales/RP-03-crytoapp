@@ -67,8 +67,7 @@ const LineChart: React.FC<{
 					</Title>
 				</Col>
 			</Row>
-			{/*
- 				// @ts-ignore */}
+			{/* @ts-ignore */}
 			<Line data={data} options={options} />
 		</>
 	);
