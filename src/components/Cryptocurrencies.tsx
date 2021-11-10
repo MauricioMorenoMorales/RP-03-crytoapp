@@ -41,6 +41,7 @@ const Cryptocurrencies: React.FC<{ simplified?: boolean }> = ({
 										src={currency.iconUrl}
 										height="40px"
 										width="40px"
+										alt="crypto"
 									/>
 								}
 								hoverable

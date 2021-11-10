@@ -32,10 +32,10 @@ const CryptoDetails: React.FC = () => {
 	const { data: coinHistoryData, isFetching: isFetchingCoinHistoryData } =
 		useGetCryptoHistoryQuery({ coinId, timePeriod });
 	let cryptoDetails = data?.data?.coin;
-	console.log('coinHistoryData >>>', coinHistoryData);
 
 	const time = ['24h', '7d', '30d', '1y', '5y'];
 
+	// prettier-ignore
 	const stats = cryptoDetails
 		? [
 				{
@@ -61,15 +61,16 @@ const CryptoDetails: React.FC = () => {
 					value: `$ ${millify(cryptoDetails.allTimeHigh.price)}`,
 					icon: <TrophyOutlined />,
 				},
-		  ]
+			]
 		: [
 				{
 					title: 'No data available',
 					value: `Error fetching the data`,
 					icon: 'img',
 				},
-		  ];
+			];
 
+	// prettier-ignore
 	const genericStats = cryptoDetails
 		? [
 				{
@@ -101,14 +102,14 @@ const CryptoDetails: React.FC = () => {
 					value: `$ ${millify(cryptoDetails.circulatingSupply)}`,
 					icon: <ExclamationCircleOutlined />,
 				},
-		  ]
+			]
 		: [
 				{
 					title: 'No data available',
 					value: `Error fetching the data`,
 					icon: 'img',
 				},
-		  ];
+			];
 
 	if (isFetching) return <h2>Loading....</h2>;
 
